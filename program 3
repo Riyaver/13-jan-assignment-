@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+class area
+{
+public:
+    void arr(int l, int b)
+    {
+        cout<<l*b<<endl;
+    }
+
+    void arr(int a)
+    {
+        cout<<a*a<< endl;
+    }
+};
+
+int main()
+{
+    area a1;
+    a1.arr(2,3);
+    a1.arr(12);
+}              
