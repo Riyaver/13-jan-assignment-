@@ -1,2 +1,45 @@
 program 5
 
+#include<iostream>
+#include<string>
+using namespace std;
+class student{
+ 	int age;
+ 	string name, address;
+ 	public:
+  		student()
+  		{
+   			name="unknown";
+    		age=0;
+    		address="not available";  
+  		}
+  
+ 		setInfo(string name1, int age1)
+  		{
+   			name=name1;
+			age=age1;
+  		}
+  
+ 		setInfo(string name2, int age2, string address2)
+  		{
+   			name = name2;
+    		age= age2;
+    		address=address2; 
+  		}
+ 		void display()
+  		{		 
+    		cout<<"Name: "<<name<<" "<<"Age: "<<age<<" "<<"Address: "<<address<<endl;
+  		}
+};
+int main()
+{
+ 	student s;
+ 	int age;
+ 	string name, address;
+ 	cout<<"Enter Details: "<<endl;
+  	cin>>name>>age>>address;
+    s.setInfo(name, age, address);
+    s.display();
+    s.setInfo(name,age);
+    s.display();
+}
