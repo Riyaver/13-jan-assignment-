@@ -1,0 +1,30 @@
+PROGRAM 2
+
+
+#include<iostream>
+using namespace std;
+class Programming
+{
+	string s;
+	string a;
+	public:
+		Programming()
+		{
+			a = 'programming languages';
+		}	
+		Programming(string s)
+		{
+			a=s;
+		}
+		void ans()
+		{
+			cout<<"I love "<<a<<endl;
+		}
+};
+main()
+{
+	Programming r1,r2('cpp');
+	r1.ans();
+	r2.ans();
+
+}
